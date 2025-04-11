@@ -128,12 +128,14 @@ export function useForm<
       control._setErrors(props.errors);
     }
   }, [props.errors, control]);
+  this is a useEffect props
 
   React.useEffect(() => {
     if (!control._state.mount) {
       control._setValid();
       control._state.mount = true;
     }
+    
 
     if (control._state.watch) {
       control._state.watch = false;
